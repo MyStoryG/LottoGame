@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Lotto Game"/>
+
+    <TextView
+        android:id="@+id/win_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="win"/>
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="result"/>
+
+    <include
+        android:id="@+id/first_game"
+        layout="@layout/input_first_game_spinner"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <include
+        android:id="@+id/second_game"
+        layout="@layout/input_second_game_spinner"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <include
+        android:id="@+id/third_game"
+        layout="@layout/input_third_game_spinner"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <include
+        android:id="@+id/fourth_game"
+        layout="@layout/input_fourth_game_spinner"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <include
+        android:id="@+id/fifth_game"
+        layout="@layout/input_fifth_game_spinner"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/first_random"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1번 랜덤"/>
+
+        <Button
+            android:id="@+id/second_random"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2번 랜덤"/>
+
+        <Button
+            android:id="@+id/third_random"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3번 랜덤"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/fourth_random"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4번 랜덤"/>
+
+        <Button
+            android:id="@+id/fifth_random"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5번 랜덤"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="초기화"/>
+
+    <Button
+        android:id="@+id/result_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="결과"/>
+
+
+</LinearLayout>
